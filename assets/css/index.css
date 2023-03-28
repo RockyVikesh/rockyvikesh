@@ -11,10 +11,13 @@
     font-family: algerian;
 }
 
-.font-titan{
-    font-family: 'Titan One', cursive;
-    font-size: 35px;
-    letter-spacing: 5px;
+.font-alkatra{
+    font-family: 'Alkatra', cursive;
+    letter-spacing: 2px;
+}
+
+.font-kanit {
+    font-family: 'Kanit', sans-serif;
 }
 
 nav{
@@ -26,7 +29,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
 
 .logo {
@@ -43,6 +45,10 @@ nav{
     text-transform: capitalize;
     font-size: 24px;
     margin-left: 5px;
+}
+
+.mobile-menu-box {
+    display: none;
 }
 
 .nav-link{
@@ -85,20 +91,26 @@ nav{
     line-height: 0;
 }
 
-.professional, .developer-name {
-    font-size: 30px;
+.professional {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.developer-name{
+    font-size: 35px;
+    color: orangered;
     letter-spacing: 2px;
     font-weight: bold;
 }
 
-.developer-name{
-    color: orangered;
+#rocky-about-box .website-name, .email, .expierence {
+    padding: 5px 0px;
+    font-weight: bold;
 }
 
-.common-style {
-    width: fit-content;
-    background-color: red;
-}
 
 
 
@@ -141,7 +153,7 @@ section{
 
 
 
-@media(max-width: 768px){
+@media(max-width: 640px){
     
     nav ul {
         width: 100%;
@@ -171,6 +183,27 @@ section{
         font-size: 24px;
     }
 
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu-box {
+        display: block;
+        width: 100%;
+    }
+
+    .open-ul {
+        display: block;
+    }
+
+    .close-ul {
+        display: none;
+    }
+
+    .menu-ul {
+        transition: 2s;
+    }
+
     #overlay-box {
         width: 100%;
         height: auto;
@@ -196,5 +229,24 @@ section{
         padding-left: 0px;
         padding-top: 10px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+ 
+    #rocky-about-box .professional {
+        font-size: 40px;
+    
+    }
+
+    #rocky-about-box .developer-name{
+        font-size: 35px;
+    }
+
+    #rocky-about-box .website-name, .email, .expierence {
+        padding: 5px 0px;
+    }
+
+
 }

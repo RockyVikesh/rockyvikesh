@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="animation__animate/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="icons/css/font-awesome.min.css">
@@ -17,14 +16,14 @@
 	<script type="text/javascript" src="assets/javascripts/index.js"></script>
 </head>
 <body>
-	<header class="test container-fluid p-0">
+	<header class="container-fluid p-0">
 		<nav class="nav d-flex justify-content-between align-items-center">
 			<div id="brand-box">
 				<img src="./assets/images/dz.png" class="logo" />
-				<a class="brand-name" href="#">Rocky Vikesh</a>
+				<a class="brand-name" href="https://rockyvikesh.github.io">Rocky Vikesh</a>
 			</div>
 			
-			<ul class="nav">
+			<ul class="nav desktop-menu">
 				<li class="nav-item">
 					<a href="#" class="nav-link">Home</a>
 				</li>
@@ -45,18 +44,48 @@
 					<a href="#" class="nav-link">Contact us</a>
 				</li>
 			</ul>
+
+			<div class="mobile-menu-box test">
+				<div class="d-flex justify-content-end align-items-center py-2 pr-2 bg-light">
+					<button class="btn btn-success menu-icon" >
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<ul class="nav menu-ul close-ul">
+					<li class="nav-item w-100">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+	
+					<li class="nav-item w-100">
+						<a href="#" class="nav-link">Products</a>
+					</li>
+	
+					<li class="nav-item w-100">
+						<a href="#" class="nav-link">Price</a>
+					</li>
+	
+					<li class="nav-item w-100">
+						<a href="#" class="nav-link">About us</a>
+					</li>
+	
+					<li class="nav-item w-100">
+						<a href="#" class="nav-link">Contact us</a>
+					</li>
+				</ul>
+			</div>
+			
 		</nav>
-		<div class="container-fluid test" id="rocky-box">		
+		<div class="container-fluid" id="rocky-box">		
 			<div id="overlay-box">
-				<div class=" test" id="rocky-image-box">
+				<div id="rocky-image-box">
 					<img src="assets/images/rocky.jpg" class="rocky-image" />
 				</div>
-				<div class="test" id="rocky-about-box">
-					<h1 class="font-titan professional">PROFFESIONAL SOFTWARE DEVELOPER</h1>
-					<h4 class="font-titan developer-name">Rocky Vikesh</h4>
-					<p class="common-style">Expierence: 2 years</p>
-					<p class="common-style">Website: <a href="https://rockyvikesh.github.io">https://rockyvikesh.github.io</a></p>
-					<p class="common-style">Email: rockyvikesh08@gmail.com</p>
+				<div id="rocky-about-box">
+					<h1 class="font-alkatra professional">PROFFESIONAL <br /> SOFTWARE DEVELOPER</h1>
+					<h4 class="font-kanit developer-name">Rocky Vikesh</h4>
+					<p class="website-name">Website: <a href="https://rockyvikesh.github.io">https://rockyvikesh.github.io</a></p>
+					<p class="email">Email: rockyvikesh08@gmail.com</p>
+					<p class="expierence">Expierence: 2 years</p>
 					<button class="btn btn-danger">Contact Us</button>
 				</div>
 			</div>
